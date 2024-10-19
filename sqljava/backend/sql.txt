@@ -1,0 +1,8 @@
+CREATE DATABASE registration_db;
+USE registration_db;
+CREATE TABLE Registration (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    date_of_birth DATE NOT NULL
+);
